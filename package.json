@@ -5,7 +5,8 @@
   "main": "./src/api/server.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "db:reset": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed"
   },
   "author": "Patrick Dack",
   "license": "ISC",
